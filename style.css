@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-Orange: hsl(25, 97%, 53%);
+
+    --color-White: hsl(0, 0%, 100%);
+    --color-Light-Grey: hsl(217, 12%, 63%);
+    --color-Medium-Grey: hsl(217, 9%, 28%);
+    --color-Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+
+    --font-size: 15px;
+    --font-family: 'Overpass', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    margin: 2rem;
+}
+
+.main-container,
+.thank-you {
+    background-color: var(--color-Dark-Blue);
+    padding: 1.5rem;
+    border-radius: 0.625rem;
+    margin: 0 1.5rem;
+    max-width: 400px;
+}
+
+.main-container img {
+    background-color: var(--color-Medium-Grey);
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.main-container h1 {
+    margin: 2rem 0 1rem;
+    color: #fff;
+}
+
+.main-container p {
+    color: var(--color-Light-Grey);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.main-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.main-container ul li button{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-Medium-Grey);
+    padding-top: 0.2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-container ul li button:hover{
+ background-color: var(--color-Orange);
+}
+
+.main-container ul li button:focus{
+    background-color: var(--color-Light-Grey);
+}
+
+.bnt-submit {
+    font-size: 1rem;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: var(--color-Orange);
+    border: none;
+    color: #fff;
+    padding: 0.5rem 0 0.6rem;
+    transition: 0.3s;
+    border-radius: 30px; 
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+}
+
+.bnt-submit:hover {
+    background-color: #fff;
+    color: var(--color-Orange);
+}
+
+.thank-you  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.thank-you img {
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+.thank-you p.text-rating {
+    background-color: var(--color-Medium-Grey);
+    color: var(--color-Orange);
+    padding: 0.5rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+}
+
+.thank-you h2 {
+    color: #fff;
+    margin: 1rem auto;
+
+}
+
+.thank-you p {
+    color: var(--color-Light-Grey);
+    margin-bottom: 1.5rem;
+}
+
+button {
+    font-family: inherit;
+}
+
+.hidden {
+    display: none;
+}
